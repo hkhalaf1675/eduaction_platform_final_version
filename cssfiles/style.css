@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Rubic */
+
+@font-face {
+  font-family: rubicLight;
+  src: url("../fonts/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: rubicRegular;
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: rubicMedium;
+  src: url("../fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: rubicSemiBold;
+  src: url("../fonts/Rubik-SemiBold.ttf");
+}
+
+/* Roboto */
+@font-face {
+  font-family: robotoRegular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: robotoMedium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.pt {
+  padding-top: 80px;
+}
+.pb {
+  padding-bottom: 60px;
+}
+
+/* hero */
+#hero {
+  background: url("../img/home-banner.jpg") no-repeat center bottom/cover;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 45px;
+}
+.navigation ul li ul li {
+  display: block;
+  border-bottom: 1px solid #ededed;
+  margin: 0;
+}
+
+.navigation ul li ul {
+  position: absolute;
+  left: 0;
+  top: 120%;
+  width: 180px;
+  opacity: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.navigation ul li:hover ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navigation ul li a {
+  color: #002347;
+  font-family: rubicMedium;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: block;
+}
+.navigation ul li ul li a {
+  padding: 15px 25px;
+}
+
+.navigation ul li:hover > a {
+  color: #fdc632;
+}
+
+.navigation ul ul li:hover > a {
+  background: #fdc632;
+  color: #fff;
+}
+
+/* search */
+.search a {
+  color: #002347;
+}
+.searchinput{
+  background-color: transparent;
+  
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* login & signup */
+.login span{
+  font-size: 16px;
+  border: 1px solid rgb(96, 91, 116);
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* content */
+
+#hero .content {
+  text-align: center;
+  height: 90vh;
+  padding-top: 70px;
+}
+
+.content p {
+  font-family: robotoMedium;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #002347;
+}
+
+.content h2 {
+  font-family: rubicMedium;
+  text-transform: uppercase;
+  font-size: 45px;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  color: #002347;
+}
+
+/* Features */
+.section-title h2 {
+  font-family: rubicMedium;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #002347;
+}
+.section-title p {
+  font-family: robotoRegular;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  color: #7b838a;
+}
+
+.all-features {
+  display: flex;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.box {
+  background: #f9f9ff;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+}
+
+.box-content h3 {
+  font-family: rubicRegular;
+  font-size: 17px;
+  color: #002347;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.box-content p {
+  font-family: robotoRegular !important;
+  font-size: 14px !important;
+  color: #7b838a;
+  font-style: normal !important;
+  text-align: left !important;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+}
+
+.box:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Courses */
+.course-wrapper {
+  margin-top: 100px;
+  display: flex;
+  gap: 40px;
+}
+.course-header {
+  overflow: hidden;
+}
+
+.course-header img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.course-content {
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  right: 15px;
+  background: #fdc632;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  top: -40px;
+  font-family: rubicMedium;
+  transition: all 0.3s ease;
+}
+
+.tag {
+  background: #002347;
+  color: #fff;
+  font-family: robotoRegular;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  margin-top: 20px !important;
+  display: inline-block;
+}
+
+.course-content {
+  background: #f9f9ff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.course-content h4 {
+  font-family: rubicRegular;
+  font-size: 18px;
+  color: #002347;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.course-content p {
+  font-family: robotoRegular;
+  color: #7b838a;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.single-course {
+  transition: all 0.3s ease;
+}
+
+.single-course:hover {
+  box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+}
+.single-course:hover .price {
+  color: #fdc632;
+  background: #002347;
+}
+.single-course:hover .course-header img {
+  transform: scale(1.1);
+}
+
+/* Expert */
+.all-trainers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.trainer {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.trainer-header img {
+  width: 100%;
+}
+.trainer-content {
+  text-align: center;
+  padding: 20px;
+}
+.trainer-bio h3 {
+  font-family: rubicMedium;
+  color: #002347;
+}
+.trainer-des {
+  margin-top: 30px;
+  font-family: robotoRegular;
+  color: #7b838a;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Events */
+.events {
+  background: #002347;
+}
+.events .section-title h2 {
+  color: #fff;
+}
+
+.our-events {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.single-event {
+  position: relative;
+}
+.single-event:hover img {
+  transform: scale(1.1);
+}
+
+.single-event img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.single-event p {
+  font-family: rubicRegular;
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 1.7em;
+  color: white;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.btn-event {
+  background: #fdc632;
+  color: #002347;
+  transition: 0.3s;
+  border: 2px solid #fdc632;
+  border-radius: 0 !important;
+  padding: 14px 40px !important;
+  font-weight: bold;
+}
+
+/* Client */
+.testimonial {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.single-testimonial {
+  display: flex;
+  padding: 50px;
+  box-shadow: 0px 15px 30px rgba(221, 221, 221, 0.3);
+}
+.client-thumb img {
+  width: 150px;
+}
+.client-quote {
+  margin-left: 30px;
+}
+.client-quote h4 {
+  font-family: rubicMedium;
+  color: #002347;
+  margin-bottom: 20px;
+}
+
+.client-quote p {
+  font-family: rubicRegular;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+/* footer */
+.footer {
+  background: #002347;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.widget-title {
+  font-family: rubicRegular;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-menu li a {
+  font-family: robotoRegular;
+  color: #7b838a;
+  font-size: 14px;
+  padding-bottom: 12px;
+  display: block;
+}
+.footer-menu li:hover a {
+  color: #fff;
+}
+.newsletter p {
+  font-family: rubicRegular;
+  color: #7b838a;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-form {
+  display: flex;
+}
+.footer-form input {
+  border: none;
+  font-family: rubicRegular;
+  color: #7b838a;
+  font-size: 12px;
+  background: #334f6c;
+  padding: 10px 12px;
+  width: 80%;
+}
+.footer-form input:focus {
+  outline: 0;
+}
+.sub-btn {
+  font-family: rubicMedium;
+  text-transform: uppercase;
+  color: #002347;
+  background: #fdc632;
+  font-size: 12px;
+  padding: 10px 12px;
+  margin-left: -40px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  font-family: robotoRegular;
+  color: #7b838a;
+  font-size: 14px;
+}
+.copyright a {
+  color: #fdc632;
+}
+
+.social-follow {
+  display: flex;
+  gap: 6px;
+}
+.footer-social {
+  background: #334f6c;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px !important;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+
+[class^="ti-"] {
+  line-height: inherit;
+}
+.footer-social:hover {
+  background: #fdc632;
+  color: #002347;
+}

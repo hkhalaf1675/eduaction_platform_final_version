@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Rubic */
+  
+  @font-face {
+    font-family: rubicLight;
+    src: url("fonts/Rubik-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicRegular;
+    src: url("fonts/Rubik-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicMedium;
+    src: url("fonts/Rubik-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicSemiBold;
+    src: url("fonts/Rubik-SemiBold.ttf");
+  }
+  
+  /* Roboto */
+  @font-face {
+    font-family: robotoRegular;
+    src: url("fonts/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: robotoMedium;
+    src: url("fonts/Roboto-Medium.ttf");
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .pt {
+    padding-top: 80px;
+  }
+  .pb {
+    padding-bottom: 60px;
+  }
+  
+/* header */
+.header{
+    background: #e7e8f3;
+}
+.container {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding-top: 14px;
+  }
+
+/* Register */
+
+
+
+/* footer */
+.footer {
+    background: #002347;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .widget-title {
+    font-family: rubicRegular;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .footer-menu li a {
+    font-family: robotoRegular;
+    color: #7b838a;
+    font-size: 14px;
+    padding-bottom: 12px;
+    display: block;
+  }
+  .footer-menu li:hover a {
+    color: #fff;
+  }
+  .newsletter p {
+    font-family: rubicRegular;
+    color: #7b838a;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-form input {
+    border: none;
+    font-family: rubicRegular;
+    color: #7b838a;
+    font-size: 12px;
+    background: #334f6c;
+    padding: 10px 12px;
+    width: 80%;
+  }
+  .footer-form input:focus {
+    outline: 0;
+  }
+  .sub-btn {
+    font-family: rubicMedium;
+    text-transform: uppercase;
+    color: #002347;
+    background: #fdc632;
+    font-size: 12px;
+    padding: 10px 12px;
+    margin-left: -40px;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    font-family: robotoRegular;
+    color: #7b838a;
+    font-size: 14px;
+  }
+  .copyright a {
+    color: #fdc632;
+  }
+  
+  .social-follow {
+    display: flex;
+    gap: 6px;
+  }
+  .footer-social {
+    background: #334f6c;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px !important;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: #fff;
+  }
+  
+  [class^="ti-"] {
+    line-height: inherit;
+  }
+  .footer-social:hover {
+    background: #fdc632;
+    color: #002347;
+  }
+
+
+/* login */  
+#login{
+    background: url("../img/home-banner.jpg") no-repeat center bottom/cover;
+}
+.login-form {
+    padding: 30px;
+  }
+ 
+  .section-title h2 {
+    font-family: rubicMedium;
+    color: #002347;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  
+  .booking-form input {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #7b838a;
+    border: none;
+    border: 1px solid rgb(54, 38, 38);
+    border-radius: 20px;
+  }
+  #transparent-input{
+    background: transparent;
+  }
+  
+  .booking-form input:focus {
+    outline: 0;
+  }
+  .register-btn {
+    margin-top: 20px;
+    background-color: #fdc632;
+    color: #0d0d0e !important;
+    text-transform: uppercase;
+    font-family: rubicMedium;
+    padding: 12px 8px !important;
+    font-weight: bolder;
+  }
+  
+  .login-form .booking-form a{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(5, 193, 226);
+    font-weight: bolder;
+  }

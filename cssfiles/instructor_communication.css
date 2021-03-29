@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Rubic */
+  
+  @font-face {
+    font-family: rubicLight;
+    src: url("fonts/Rubik-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicRegular;
+    src: url("fonts/Rubik-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicMedium;
+    src: url("fonts/Rubik-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: rubicSemiBold;
+    src: url("fonts/Rubik-SemiBold.ttf");
+  }
+  
+  /* Roboto */
+  @font-face {
+    font-family: robotoRegular;
+    src: url("fonts/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: robotoMedium;
+    src: url("fonts/Roboto-Medium.ttf");
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .pt {
+    padding-top: 80px;
+  }
+  .pb {
+    padding-bottom: 60px;
+  }
+  
+/* header */
+.header{
+    background: #e7e8f3;
+}
+.container {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* navigation */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 45px;
+  }
+  .navigation ul li ul li {
+    display: block;
+    border-bottom: 1px solid #ededed;
+    margin: 0;
+  }
+  
+  .navigation ul li ul {
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 180px;
+    opacity: 0;
+    background: #fff;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .navigation ul li:hover ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .navigation ul li a {
+    color: #002347;
+    font-family: rubicMedium;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: block;
+  }
+  .navigation ul li ul li a {
+    padding: 15px 25px;
+  }
+  
+  .navigation ul li:hover > a {
+    color: #fdc632;
+  }
+  
+  .navigation ul ul li:hover > a {
+    background: #fdc632;
+    color: #fff;
+  }
+  .navigation ul li a span{
+      color: white;
+      background-color: rgb(126, 118, 126);
+      padding: 5px;
+      border: 3px solid rgb(126, 118, 126);
+      border-radius: 50%;
+  }
+
+  
+/* footer */
+.footer {
+    background: #002347;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .widget-title {
+    font-family: rubicRegular;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .footer-menu li a {
+    font-family: robotoRegular;
+    color: #7b838a;
+    font-size: 14px;
+    padding-bottom: 12px;
+    display: block;
+  }
+  .footer-menu li:hover a {
+    color: #fff;
+  }
+  .newsletter p {
+    font-family: rubicRegular;
+    color: #7b838a;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-form input {
+    border: none;
+    font-family: rubicRegular;
+    color: #7b838a;
+    font-size: 12px;
+    background: #334f6c;
+    padding: 10px 12px;
+    width: 80%;
+  }
+  .footer-form input:focus {
+    outline: 0;
+  }
+  .sub-btn {
+    font-family: rubicMedium;
+    text-transform: uppercase;
+    color: #002347;
+    background: #fdc632;
+    font-size: 12px;
+    padding: 10px 12px;
+    margin-left: -40px;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    font-family: robotoRegular;
+    color: #7b838a;
+    font-size: 14px;
+  }
+  .copyright a {
+    color: #fdc632;
+  }
+  
+  .social-follow {
+    display: flex;
+    gap: 6px;
+  }
+  .footer-social {
+    background: #334f6c;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px !important;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: #fff;
+  }
+  
+  [class^="ti-"] {
+    line-height: inherit;
+  }
+  .footer-social:hover {
+    background: #fdc632;
+    color: #002347;
+  }
+
+  /* Q & A section */
+
+  .q_a_img{
+      text-align: center;
+  }
+  .q_a_img img{
+    width: 50%;
+    transition: all 0.2s ease;
+    transform: scale(1);
+  }
+  .q_a_text{
+      font-size: 18px;
+      color: gray;
+      text-align: center;
+  }
